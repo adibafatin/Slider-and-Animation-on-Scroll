@@ -3,4 +3,6 @@ Implementing Slider and Animation on Scroll using Tweenmax, Timelinemax and Scro
 
 Day 18-20 of #100DaysOfCode
 
+Photo resources: Gal Meets Glam
+
 View here :  https://adibafatin.github.io/Slider-and-Animation-on-Scroll/
