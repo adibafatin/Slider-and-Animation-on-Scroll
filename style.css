@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc4c2), to(#c1e1ff));
+  background-image: linear-gradient(to top, #fbc4c2 0%, #c1e1ff 100%);
+}
+
+header nav {
+  position: fixed;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(223, 222, 222, 0.1);
+}
+
+header nav #logo {
+  width: 50%;
+}
+
+header nav #logo span {
+  color: white;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+header nav ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+
+.feature .feature-content {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature .feature-content h1 {
+  font-size: 40px;
+}
+
+.feature .feature-content button {
+  background: black;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.feature img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.feature2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #faf8f8), color-stop(99%, #e3eeff), to(#e3eeff));
+  background-image: linear-gradient(to top, #faf8f8 20%, #e3eeff 99%, #e3eeff 100%);
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.feature2.visible {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.feature3 {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f3e6e0), to(#94affa));
+  background-image: linear-gradient(to top, #f3e6e0 20%, #94affa 100%);
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.feature3.visible {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.feature4 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f3e6e0), to(#d1d5e6));
+  background-image: linear-gradient(to top, #f3e6e0 0%, #d1d5e6 100%);
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.feature4.visible {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc4c2), to(#c1e1ff));
+  background-image: linear-gradient(to top, #fbc4c2 0%, #c1e1ff 100%);
+  z-index: 0;
+}
+
+.slider #logo {
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20%;
+}
+
+.slider #logo span {
+  color: white;
+}
+
+.container {
+  /* We use max-width for responsive */
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+
+.container .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fbc4c2), to(#c1e1ff));
+  background: linear-gradient(to top, #fbc4c2 0%, #c1e1ff 100%);
+  margin-bottom: 2rem;
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.container .card div {
+  padding: 2px;
+}
+
+.container .card img {
+  width: 100%;
+}
+
+.container .card h3 {
+  margin-top: 50%;
+  font-family: "Pinyon Script", cursive;
+  font-size: 40px;
+}
+
+.container .card:nth-child(even) img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.container .card:nth-child(even) div {
+  padding: 2px 35px;
+}
+
+.container .card p {
+  margin-bottom: 20px;
+}
+
+.container .card .btn {
+  background: black;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container .card.visible {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+/*# sourceMappingURL=style.css.map */
